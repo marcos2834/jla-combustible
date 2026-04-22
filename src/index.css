@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #84221F;
+  --color-accent: #E7AF19;
+  --color-white: #FFFFFF;
+  --color-text-secondary: #3A3A3A;
+  --color-bg: #F5F5F5;
+  --font-title: 'Barlow Condensed', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-data: 'Barlow', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
