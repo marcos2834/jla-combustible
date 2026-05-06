@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   } = req.body
 
   const serviceAccountEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
-  const privateKeyRaw = process.env.GOOGLE_PRIVATE_KEY
+  const privateKeyRaw = process.env.GOOGLE_PRIVATE_KhEY
   const sheetId = process.env.GOOGLE_SHEET_ID
 
   if (!serviceAccountEmail || !privateKeyRaw || !sheetId) {
@@ -42,7 +42,7 @@ export default async function handler(req, res) {
       modo || 'Auto'
     ]
 
-    const sheetsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Cargas!A:L:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`
+    const sheetsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Cargas!A:A:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`
 
     const sheetsResp = await fetch(sheetsUrl, {
       method: 'POST',
