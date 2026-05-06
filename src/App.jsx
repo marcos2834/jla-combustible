@@ -311,7 +311,7 @@ export default function App() {
 
     try {
       const payload = {
-        vehiculo: vehiculo || '(sin vehículo)',
+        vehiculo: vehiculo || '(ículo)',
         conductor: datosCondutor.conductor,
         estacion: datosIA.estacion,
         fecha: datosIA.fecha,
@@ -389,17 +389,34 @@ export default function App() {
             <div style={styles.card}>
               <div style={{ marginBottom: '16px' }}>
                 <div style={styles.sectionTitle}>Vehículo</div>
-                {vehiculo ? (
-                  <div style={styles.vehicleChip}>
-                    <span style={{ fontSize: '20px' }}>🚛</span>
-                    <span style={styles.vehicleText}>{vehiculo}</span>
-                  </div>
-                ) : (
-                  <div style={{ ...styles.input, color: '#999', fontStyle: 'italic', padding: '10px 14px' }}>
-                    Sin vehículo asignado (usá el QR del vehículo)
-                  </div>
-                )}
-              </div>
+                              <select
+                                                value={vehiculo}
+                                                onChange={(e) => setVehiculo(e.target.value)}
+                                                style={{ ...styles.input, color: vehiculo ? COLORES.textSecondary : '#999' }}
+                                              >
+                                              <option value="">-- Seleccioná un vehículo --</option>
+                                              <option value="14 - PAC970 - NUEVO FIORINO">14 - PAC970 - NUEVO FIORINO</option>
+                                              <option value="13 - JQN663 - UNO">13 - JQN663 - UNO</option>
+                                              <option value="11 - LTE059 - HILUX">11 - LTE059 - HILUX</option>
+                                              <option value="10 - LTE058 - HILUX">10 - LTE058 - HILUX</option>
+                                              <option value="22 - AD882WS - HILUX">22 - AD882WS - HILUX</option>
+                                              <option value="23 - AE046VR - HILUX">23 - AE046VR - HILUX</option>
+                                              <option value="29 - AF795JO - HILUX">29 - AF795JO - HILUX</option>
+                                              <option value="30 - AF828DE - CRONOS">30 - AF828DE - CRONOS</option>
+                                              <option value="31 - AG149KE - ETIOS">31 - AG149KE - ETIOS</option>
+                                              <option value="32 - AG207HC - CRONOS">32 - AG207HC - CRONOS</option>
+                                              <option value="34 - AH300EF - KANGOO">34 - AH300EF - KANGOO</option>
+                                              <option value="35 - AH300EG - KANGOO">35 - AH300EG - KANGOO</option>
+                                              <option value="36 - AH300EC - KANGOO">36 - AH300EC - KANGOO</option>
+                                              <option value="37 - AH300ED - KANGOO">37 - AH300ED - KANGOO</option>
+                                              <option value="38 - AH300EE - KANGOO">38 - AH300EE - KANGOO</option>
+                                              <option value="39 - AH743VK - COROLLA">39 - AH743VK - COROLLA</option>
+                                              <option value="24 - AE012KK - HILUX">24 - AE012KK - HILUX</option>
+                                              <option value="26 - AE619PD - NUEVO FIORINO">26 - AE619PD - NUEVO FIORINO</option>
+                                              <option value="28 - AF214OZ - FRONTIER">28 - AF214OZ - FRONTIER</option>
+                                              <option value="40 - AH852ZF - HILUX">40 - AH852ZF - HILUX</option>
+                              </select>
+                          </div>
               <div style={styles.sectionTitle}>Cargá tu ticket</div>
               <div style={styles.sectionSubtitle}>Elegí cómo querés ingresar los datos</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
