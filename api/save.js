@@ -7,12 +7,12 @@ export default async function handler(req, res) {
 
   const {
     vehiculo, conductor, estacion, fecha, litros,
-    precio_por_litro, importe_total, tipo_combustible,
+    precio_por_lithro, importe_total, tipo_combustible,
     metodo_pago, observaciones, modo
   } = req.body
 
   const serviceAccountEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
-  const privateKeyRaw = process.env.GOOGLE_PRIVATE_KhEY
+  const privateKeyRaw = process.env.GOOGLE_PRIVATE_KEY
   const sheetId = process.env.GOOGLE_SHEET_ID
 
   if (!serviceAccountEmail || !privateKeyRaw || !sheetId) {
