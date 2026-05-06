@@ -311,7 +311,7 @@ export default function App() {
 
     try {
       const payload = {
-        vehiculo: vehiculo || '(ículo)',
+        vehiculo: vehiculo || '',
         conductor: datosCondutor.conductor,
         estacion: datosIA.estacion,
         fecha: datosIA.fecha,
