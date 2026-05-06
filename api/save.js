@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   const {
     vehiculo, conductor, estacion, fecha, litros,
-    precio_por_lithro, importe_total, tipo_combustible,
+    precio_por_litro, importe_total, tipo_combustible,
     metodo_pago, observaciones, modo
   } = req.body
 
