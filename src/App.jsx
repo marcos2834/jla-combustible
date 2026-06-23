@@ -395,26 +395,26 @@ export default function App() {
                                                 style={{ ...styles.input, color: vehiculo ? COLORES.textSecondary : '#999' }}
                                               >
                                               <option value="">-- Seleccioná un vehículo --</option>
-                                              <option value="14 - PAC970 - NUEVO FIORINO">14 - PAC970 - NUEVO FIORINO</option>
-                                              <option value="13 - JQN663 - UNO">13 - JQN663 - UNO</option>
-                                              <option value="11 - LTE059 - HILUX">11 - LTE059 - HILUX</option>
-                                              <option value="10 - LTE058 - HILUX">10 - LTE058 - HILUX</option>
-                                              <option value="22 - AD882WS - HILUX">22 - AD882WS - HILUX</option>
-                                              <option value="23 - AE046VR - HILUX">23 - AE046VR - HILUX</option>
-                                              <option value="29 - AF795JO - HILUX">29 - AF795JO - HILUX</option>
-                                              <option value="30 - AF828DE - CRONOS">30 - AF828DE - CRONOS</option>
-                                              <option value="31 - AG149KE - ETIOS">31 - AG149KE - ETIOS</option>
-                                              <option value="32 - AG207HC - CRONOS">32 - AG207HC - CRONOS</option>
-                                              <option value="34 - AH300EF - KANGOO">34 - AH300EF - KANGOO</option>
-                                              <option value="35 - AH300EG - KANGOO">35 - AH300EG - KANGOO</option>
-                                              <option value="36 - AH300EC - KANGOO">36 - AH300EC - KANGOO</option>
-                                              <option value="37 - AH300ED - KANGOO">37 - AH300ED - KANGOO</option>
-                                              <option value="38 - AH300EE - KANGOO">38 - AH300EE - KANGOO</option>
-                                              <option value="39 - AH743VK - COROLLA">39 - AH743VK - COROLLA</option>
-                                              <option value="24 - AE012KK - HILUX">24 - AE012KK - HILUX</option>
-                                              <option value="26 - AE619PD - NUEVO FIORINO">26 - AE619PD - NUEVO FIORINO</option>
-                                              <option value="28 - AF214OZ - FRONTIER">28 - AF214OZ - FRONTIER</option>
-                                              <option value="40 - AH852ZF - HILUX">40 - AH852ZF - HILUX</option>
+                                              <option value="14 - PAC970 - NUEVO FIORINO">PAC970</option>
+                                              <option value="13 - JQN663 - UNO">JQN663</option>
+                                              <option value="11 - LTE059 - HILUX">LTE059</option>
+                                              <option value="10 - LTE058 - HILUX">LTE058</option>
+                                              <option value="22 - AD882WS - HILUX">AD882WS</option>
+                                              <option value="23 - AE046VR - HILUX">AE046VR</option>
+                                              <option value="29 - AF795JO - HILUX">AF795JO</option>
+                                              <option value="30 - AF828DE - CRONOS">AF828DE</option>
+                                              <option value="31 - AG149KE - ETIOS">AG149KE</option>
+                                              <option value="32 - AG207HC - CRONOS">AG207HC</option>
+                                              <option value="34 - AH300EF - KANGOO">AH300EF</option>
+                                              <option value="35 - AH300EG - KANGOO">AH300EG</option>
+                                              <option value="36 - AH300EC - KANGOO">AH300EC</option>
+                                              <option value="37 - AH300ED - KANGOO">AH300ED</option>
+                                              <option value="38 - AH300EE - KANGOO">AH300EE</option>
+                                              <option value="39 - AH743VK - COROLLA">AH743VK</option>
+                                              <option value="24 - AE012KK - HILUX">AE012KK</option>
+                                              <option value="26 - AE619PD - NUEVO FIORINO">AE619PD</option>
+                                              <option value="28 - AF214OZ - FRONTIER">AF214OZ</option>
+                                              <option value="40 - AH852ZF - HILUX">AH852ZF</option>
                               </select>
                           </div>
               <div style={styles.sectionTitle}>Cargá tu ticket</div>
