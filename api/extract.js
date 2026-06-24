@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) {
     return res.status(500).json({ error: 'API key not configured' })
-  }h
+  }
 
   const prompt = `Analizá esta imagen de un ticket de combustible de Argentina. Extraé los siguientes datos en formato JSON. Si no podés leer algún campo con certeza, devolvé null para ese campo. No inventes datos.
 
